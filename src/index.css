@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* --------------------------------------- */
+/* 🌟 Global Floating Animations */
+/* --------------------------------------- */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ⭐ Smooth float animation (cards) */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+/* --------------------------------------- */
+/* ✨ Yellow Blur Background Circles */
+/* --------------------------------------- */
+.blur-circle {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background: #ffc300;
+  filter: blur(90px);
+  opacity: 0.45;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+/* --------------------------------------- */
+/* ◯ Circle Outline + ♦ Diamond Outline */
+/* --------------------------------------- */
+.bg-circle-outline,
+.bg-diamond-outline {
+  border: 3px solid rgba(255, 195, 0, 0.45);
+  opacity: 0.3;
+  animation: bounce 5s infinite ease-in-out;
+  position: absolute;
+}
+
+.bg-circle-outline {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.bg-diamond-outline {
+  width: 110px;
+  height: 110px;
+  transform: rotate(45deg);
+}
+
+
+
+/* --------------------------------------- */
+/* 📱 RESPONSIVE TWEAKS */
+/* --------------------------------------- */
+
+/* 📌 Tablet (up to 1024px) */
+@media (max-width: 1024px) {
+  .blur-circle {
+    width: 120px;
+    height: 120px;
+    filter: blur(75px);
+  }
+
+  .bg-circle-outline {
+    width: 110px;
+    height: 110px;
+  }
+
+  .bg-diamond-outline {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* 📌 Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .blur-circle {
+    width: 90px;
+    height: 90px;
+    filter: blur(65px);
+    opacity: 0.35;
+  }
+
+  .bg-circle-outline {
+    width: 80px;
+    height: 80px;
+  }
+
+  .bg-diamond-outline {
+    width: 70px;
+    height: 70px;
+  }
+
+  .float-animation {
+    animation-duration: 2.8s; /* speed up animation on mobile */
+  }
+}
+
+/* 📌 Small Phones (up to 480px) */
+@media (max-width: 480px) {
+  .blur-circle {
+    width: 60px;
+    height: 60px;
+    filter: blur(50px);
+  }
+
+  .bg-circle-outline {
+    width: 55px;
+    height: 55px;
+  }
+
+  .bg-diamond-outline {
+    width: 50px;
+    height: 50px;
+  }
+
+  .float-animation {
+    animation-duration: 2.5s; /* faster animation for small screens */
+  }
+}
