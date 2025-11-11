@@ -104,7 +104,7 @@ const Hero = () => {
           Empower Your HR <br /> Operations with One <br /> Unified Platform
         </h1>
 
-        <p className="mt-6 text-lg md:text-[22px] font-[Roboto] font-light max-w-[960px] mx-auto leading-[28px] md:leading-[32px]">
+        <p className="mt-6 text-lg md:text-[22px] font-[Roboto] font-light max-w-[960px] mx-auto leading-7 md:leading-8">
           Streamline recruitment, payroll, performance management, employee
           <br className="hidden md:block" />
           engagement with our all-in-one HR solution.
