@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "product": "Product",
+    "customer": "Customer",
+    "resources": "Resources",
+    "pricing": "Pricing",
+    "about": "About Us",
+    "login": "Login",
+    "demo": "Get a Demo",
+    "signup": "Sign Up for Free"
+  },
+  "hero": {
+    "heading": "Empower Your HR Operations with One Unified Platform",
+    "subheading": "Streamline recruitment, payroll, performance management, and employee engagement with our all-in-one HR solution.",
+    "efficiency": "Efficiency Boost",
+    "saved": "Saved Monthly",
+    "nocard": "No Credit Card Required",
+    "trust": "10,000+ Companies Trust Us",
+    "rating": "4.9/5 Rating"
+  }
+}

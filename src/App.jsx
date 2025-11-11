@@ -1,12 +1,19 @@
-import React from 'react'
-import HeroPage from './components/HeroPage'
+import React from "react";
+import Navbar from "./components/Navbar"; 
+
+import "./i18n";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div>
-      <HeroPage/>
+    <div className="font-[Poppins] relative overflow-hidden">
+    
+      <Navbar />
+<Home/>
+     
+      
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
