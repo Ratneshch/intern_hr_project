@@ -1,5 +1,5 @@
 import React from "react";
-import MyImg from "../assets/ContactPage.png";
+import MyImg from "../assets/contactpage.png";
 import { FaCheckCircle } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 
