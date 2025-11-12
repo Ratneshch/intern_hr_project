@@ -72,14 +72,14 @@ const Reviews = () => {
     slidesToShow,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
     arrows: slidesToShow > 1, // hide arrows on mobile
   };
 
   return (
     <section className="bg-[#FFF8F2] py-16 relative overflow-hidden [overflow-x:clip]">
       {/* Desktop heading with star */}
-      <div className="absolute left-30 top-30 flex flex-col items-start pl-8 z-10 hidden md:flex">
+      <div className="absolute left-10 top-30 flex flex-col items-start pl-8 z-10 hidden md:flex">
         <div className="text-[#EFB444] text-[240px] opacity-20 font-bold leading-none ml-[-40px]">★</div>
         <div className="mt-[-120px] ml-10">
           <h3 className="text-[#FF8800] text-5xl font-semibold">Customer Feedback</h3>
@@ -115,7 +115,7 @@ const Reviews = () => {
           </p>
         </div>
 
-<div className="px-2 sm:px-10 w-full max-w-7xl mx-0 lg:mx-[500px] overflow-visible">
+<div className="px-2 sm:px-10 w-full max-w-7xl mx-0 lg:mx-[600px] overflow-visible">
   <Slider key={key} {...settings}>
     {Testimonials.map((item, index) => (
       <div key={index} className="px-2 sm:px-4 overflow-visible">
