@@ -15,8 +15,6 @@ const Home = () => {
          <Page2 />
          <Details />
       <TrustedBrands />
-    
-      
       <Services />
       <UseCases />
       <Reviews/>
