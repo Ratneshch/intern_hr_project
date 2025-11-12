@@ -17,5 +17,106 @@
     "nocard": "No Credit Card Required",
     "trust": "10,000+ Companies Trust Us",
     "rating": "4.9/5 Rating"
+  },
+  "services": [
+    {
+      "image": "rocket.png",
+      "title": "Easy Implementation",
+      "description": "Get up and running in days, not months. Our streamlined onboarding process and intuitive interface ensure quick adoption across your organization."
+    },
+    {
+      "image": "shield.png",
+      "title": "Enterprise Security",
+      "description": "Bank-level security with end-to-end encryption, multi-factor authentication, and compliance with global data protection standards."
+    },
+    {
+      "image": "trade.png",
+      "title": "Advanced Analytics",
+      "description": "Make informed decisions with real-time insights, predictive analytics, and customizable dashboards that reveal workforce trends."
+    },
+    {
+      "image": "puzzle.png",
+      "title": "Seamless Integrations",
+      "description": "Connect with 500+ popular business tools including Slack, Microsoft Teams, QuickBooks, and more for unified workflows."
+    },
+    {
+      "image": "call.png",
+      "title": "24/7 Expert Support",
+      "description": "Access dedicated support specialists anytime with live chat, phone support, and comprehensive documentation library."
+    },
+    {
+      "image": "symbol.png",
+      "title": "Scalable Solution",
+      "description": "Grow from startup to enterprise with flexible pricing plans and features that scale with your organization's needs."
+    }
+  ],
+  "services_head": [
+    {
+      "heading": "Our Services",
+      "paragraph": "We provide powerful and scalable HR solutions for modern businesses."
+    }
+  ],
+  "trusted_brand": [
+    {
+      "brand_heading": "Trusted by Leading Brands",
+      "brand_para": "Join thousands of organizations worldwide that trust HrWebsite for their HR management needs."
+    }
+  ],
+  "useCases_head": {
+    "heading": "Where This Software Is Used",
+    "paragraph": "HrWebsite serves various industries and organizations, adapting itself according to different HR challenges."
+  },
+  "useCases": [
+    {
+      "image": "bus.png",
+      "title": "Large Companies",
+      "description": "Manage thousands of employees across multiple locations with advanced compliance, reporting, and automation features."
+    },
+    {
+      "image": "whiter.png",
+      "title": "Growing Startups",
+      "description": "Efficiently scale your HR operations from day one with cost-effective solutions."
+    },
+    {
+      "image": "people.png",
+      "title": "Remote Teams",
+      "description": "Seamlessly manage distributed workforces with cloud-based tools designed for remote collaboration and engagement."
+    },
+    {
+      "image": "hand.png",
+      "title": "Consulting Firms",
+      "description": "Streamline project-based workforce management with flexible scheduling, time tracking, and client billing integration."
+    }
+  ],
+"footer": {
+  "brand": {
+    "name": "HrWebsite",
+    "description": "Empowering organizations with intelligent HR solutions that drive growth, engagement, and success."
+  },
+  "socialIcons": [
+    { "image": "facebook.png", "url": "https://facebook.com" },
+    { "image": "x.png", "url": "https://twitter.com" },
+    { "image": "in.png", "url": "https://linkedin.com" },
+    { "image": "insta.png", "url": "https://instagram.com" },
+    { "image": "chat.png", "url": "https://whatsapp.com" }
+  ],
+  "links": [
+    {
+      "title": "Product",
+      "items": ["Features", "Integrations", "Security", "Updates"]
+    },
+    {
+      "title": "Company",
+      "items": ["About Us", "Pricing", "Careers", "Contact"]
+    },
+    {
+      "title": "Resources",
+      "items": ["Blog", "Documentation", "Support", "Community"]
+    }
+  ],
+  "bottom": {
+    "copyright": "© 2024 HrWebsite. All rights reserved.",
+    "policies": ["Privacy Policy", "Terms of Service", "Cookie Policy"]
   }
+}
 }
