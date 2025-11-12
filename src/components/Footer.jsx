@@ -6,7 +6,7 @@ const Footer = () => {
   const footer = t("footer", { returnObjects: true });
 
   return (
-    <footer className="bg-[#03071E]  px-6 sm:px-10 md:px-[64px] py-10 md:py-[64px]">
+    <footer className="bg-[#03071E] mt-[74px] px-6 sm:px-10 md:px-[64px] py-10 md:py-[64px]">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-20 pb-10 md:pb-12">
         
