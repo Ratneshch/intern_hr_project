@@ -133,3 +133,20 @@
     animation-duration: 2.5s; /* faster animation for small screens */
   }
 }
+
+/* omakr */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+  display: flex;
+  will-change: transform;
+}
+/* omkar */
