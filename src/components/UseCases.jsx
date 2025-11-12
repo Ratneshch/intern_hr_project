@@ -22,17 +22,18 @@ const UseCases = () => {
       </div>
 
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
-        {Array.isArray(useCases) &&
-          useCases.map((feature, index) => (
-            <UseCaseCard
-              key={index}
-              image={feature.image }
-              title={feature.title}
-              description={feature.description}
-            />
-          ))}
-      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mt-16 gap-8 w-full">
+  {Array.isArray(useCases) &&
+    useCases.map((feature, index) => (
+      <UseCaseCard
+        key={index}
+        image={feature.image }
+        title={feature.title}
+        description={feature.description}
+      />
+    ))}
+</div>
+
     </div>
   );
 };
