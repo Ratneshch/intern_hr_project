@@ -142,9 +142,9 @@ const Reviews = () => {
     ))}
   </Slider>
 </div>
-
       </div>
     </section>
+
   );
 };
 
