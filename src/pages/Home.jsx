@@ -7,6 +7,7 @@ import Reviews from '../components/Reviews';
 import Page2 from '../pages/Page2';
 import ContactPage from '../pages/ContactPage'
 import Details from '../components/Details';
+import UseCases from '../components/UseCases';
 const Home = () => {
   return (
     <div>
@@ -14,8 +15,6 @@ const Home = () => {
          <Page2 />
          <Details />
       <TrustedBrands />
-    
-      
       <Services />
       <UseCases />
       <Reviews/>
