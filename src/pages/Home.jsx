@@ -1,9 +1,15 @@
 import React from 'react'
 import HeroPage from "../components/HeroPage"; 
+import Services from '../components/Services';
+import UseCases from '../components/Usecases';
+import TrustedBrands from '../components/TrustedBrand';
 const Home = () => {
   return (
     <div>
       <HeroPage />
+      <TrustedBrands />
+      <Services />
+      <UseCases />
     </div>
   )
 }

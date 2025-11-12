@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-
+import { RiTranslateAi2 } from "react-icons/ri";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showLangMenu, setShowLangMenu] = useState(false);
@@ -10,8 +10,6 @@ const Navbar = () => {
   const languages = [
     { code: "en", label: "English" },
     { code: "hi", label: "हिंदी" },
-    { code: "kn", label: "ಕನ್ನಡ" },
-    { code: "mh", label: "मराठी" },
   ];
 
   return (
@@ -60,7 +58,8 @@ const Navbar = () => {
               onClick={() => setShowLangMenu(!showLangMenu)}
               className="px-3 py-2 border border-white/50 text-white rounded-lg hover:bg-white hover:text-black transition-all duration-300 flex items-center gap-2"
             >
-              🌐 {i18n.language.toUpperCase()}
+          <RiTranslateAi2 />
+  {i18n.language.toUpperCase()}
             </button>
 
             {showLangMenu && (
