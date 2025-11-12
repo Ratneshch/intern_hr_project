@@ -10,8 +10,6 @@ const Navbar = () => {
   const languages = [
     { code: "en", label: "English" },
     { code: "hi", label: "हिंदी" },
-    { code: "kn", label: "ಕನ್ನಡ" },
-    { code: "mh", label: "मराठी" },
   ];
 
   return (
