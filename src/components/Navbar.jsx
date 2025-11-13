@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { RiTranslateAi2 } from "react-icons/ri";
+import { Link as ScrollLink } from "react-scroll";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showLangMenu, setShowLangMenu] = useState(false);
@@ -10,6 +12,14 @@ const Navbar = () => {
   const languages = [
     { code: "en", label: "English" },
     { code: "hi", label: "हिंदी" },
+  ];
+
+   const menuItems = [
+    { label: t("navbar.product"), to: "product" },
+    { label: t("navbar.customer"), to: "customer" },
+    { label: t("navbar.resources"), to: "resources" },
+    { label: t("navbar.pricing"), to: "pricing" }, // scrolls here
+    { label: t("navbar.about"), to: "about" },
   ];
 
   return (
@@ -22,20 +32,18 @@ const Navbar = () => {
 
         {/* ✅ Desktop Menu */}
         <ul className="hidden md:flex space-x-10 font-medium text-white">
-          {[
-            t("navbar.product"),
-            t("navbar.customer"),
-            t("navbar.resources"),
-            t("navbar.pricing"),
-            t("navbar.about"),
-          ].map((item, index) => (
+          {menuItems.map((item, index) => (
             <li key={index}>
-              <a
-                href="#"
-                className="hover:text-[#FAA307] transition-colors duration-300"
+              <ScrollLink
+                to={item.to}
+                smooth={true}
+                duration={600}
+                offset={-80} // Adjust for fixed navbar height
+                spy={true}
+                className="cursor-pointer hover:text-[#FAA307] transition-colors duration-300"
               >
-                {item}
-              </a>
+                {item.label}
+              </ScrollLink>
             </li>
           ))}
         </ul>
@@ -99,20 +107,18 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-black/85 backdrop-blur-sm p-6 text-white transition-all duration-300">
           <ul className="space-y-4 text-center text-lg">
-            {[
-              t("navbar.product"),
-              t("navbar.customer"),
-              t("navbar.resources"),
-              t("navbar.pricing"),
-              t("navbar.about"),
-            ].map((item, index) => (
+             {menuItems.map((item, index) => (
               <li key={index}>
-                <a
-                  href="#"
+                <ScrollLink
+                  to={item.to}
+                  smooth={true}
+                  duration={600}
+                  offset={-80}
+                  onClick={() => setIsOpen(false)}
                   className="block text-white hover:!text-[#FAA307] transition-colors duration-300 cursor-pointer"
                 >
-                  {item}
-                </a>
+                  {item.label}
+                </ScrollLink>
               </li>
             ))}
           </ul>

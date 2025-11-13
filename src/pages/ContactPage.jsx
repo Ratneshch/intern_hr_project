@@ -5,7 +5,7 @@ import { FiPhoneCall } from "react-icons/fi";
 
 const ContactPage = () => {
   return (
-    <div className="w-full bg-white flex flex-col lg:flex-row items-stretch justify-center gap-8 px-6 py-10 lg:px-20 relative mt-6">
+    <div className="w-full mb-8 bg-white flex flex-col lg:flex-row items-stretch justify-center gap-8 px-6 py-10 lg:px-20 relative mt-6">
       {/* Left Section (Text + Button + Features) */}
       <div className="flex flex-col justify-between w-full max-w-[600px]">
         {/* Heading */}

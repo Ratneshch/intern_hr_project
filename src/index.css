@@ -186,4 +186,9 @@
     animation-duration: 5s;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* omkar */
