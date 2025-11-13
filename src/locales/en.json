@@ -94,12 +94,32 @@
     "description": "Empowering organizations with intelligent HR solutions that drive growth, engagement, and success."
   },
   "socialIcons": [
-    { "image": "facebook.png", "url": "https://facebook.com" },
-    { "image": "x.png", "url": "https://twitter.com" },
-    { "image": "in.png", "url": "https://linkedin.com" },
-    { "image": "insta.png", "url": "https://instagram.com" },
-    { "image": "chat.png", "url": "https://whatsapp.com" }
-  ],
+  {
+    "name": "Facebook",
+    "url": "https://facebook.com",
+    "iconKey": "facebook"
+  },
+  {
+    "name": "X (Twitter)",
+    "url": "https://twitter.com",
+    "iconKey": "twitter"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://linkedin.com",
+    "iconKey": "linkedin"
+  },
+  {
+    "name": "Instagram",
+    "url": "https://instagram.com",
+    "iconKey": "instagram"
+  },
+  {
+    "name": "WhatsApp",
+    "url": "https://whatsapp.com",
+    "iconKey": "whatsapp"
+  }
+],
   "links": [
     {
       "title": "Product",
