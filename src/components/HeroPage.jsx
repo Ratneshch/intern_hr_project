@@ -81,7 +81,8 @@ const Hero = () => {
       </div>
 
       {/* ✅ Footer Stats */}
-      <div className="absolute bottom-12 md:bottom-6 w-full text-center text-white">
+     <div className="absolute bottom-4 sm:bottom-8 md:bottom-6 w-full text-center text-white">
+
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 text-xs md:text-lg font-[Roboto]">
           <div className="flex items-center gap-2">
             <FaCheckCircle className="text-yellow-500 text-lg md:text-2xl" />
